@@ -9,7 +9,7 @@ for i in heads:
         funcCalls.append(i)
 print("Number of calls: %d" % (len(funcCalls)))
 for i in funcCalls:
-    set_color(i, CIC_ITEM, 0xc7fdff)
+    set_color(i, CIC_ITEM, 0xe67e22)
 #Color Anti-VM instructions Red and print their location
 heads = Heads(get_segm_start(get_screen_ea()), get_segm_end(get_screen_ea()))
 antiVM = []
