@@ -9,7 +9,7 @@ for i in heads:
         funcCalls.append(i)
 print("Number of calls: %d" % (len(funcCalls)))
 for i in funcCalls:
-    set_color(i, CIC_ITEM, 0xe67e22)
+    set_color(i, CIC_ITEM, 0x5e4934)
 #Color Anti-VM instructions Red and print their location
 heads = Heads(get_segm_start(get_screen_ea()), get_segm_end(get_screen_ea()))
 antiVM = []
@@ -19,7 +19,7 @@ for i in heads:
 print("Number of potential Anti-VM instructions: %d" % (len(antiVM)))
 for i in antiVM:
     print("Anti-VM potential at %x" % i)
-    set_color(i, CIC_ITEM, 0x0000ff)
+    set_color(i, CIC_ITEM, 0x5924f6)
 #Color non-zeroing out xor instructions Orange
 heads = Heads(get_segm_start(get_screen_ea()), get_segm_end(get_screen_ea()))
 xor = []
@@ -29,4 +29,4 @@ for i in heads:
             xor.append(i)
 print("Number of xor: %d" % (len(xor)))
 for i in xor:
-    set_color(i, CIC_ITEM, 0x00a5ff)
+    set_color(i, CIC_ITEM, 0x2469ca)
