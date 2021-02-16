@@ -29,4 +29,4 @@ for i in heads:
             xor.append(i)
 print("Number of xor: %d" % (len(xor)))
 for i in xor:
-    set_color(i, CIC_ITEM, 0x2469ca)
+    set_color(i, CIC_ITEM, 0x5d374d)
